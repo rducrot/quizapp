@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Margin and padding -->
+    <dimen name="mainMargin">5dp</dimen>
+    <dimen name="regularMargin">10dp</dimen>
+    <dimen name="biggerMargin">20dp</dimen>
+    <dimen name="largeMargin">30dp</dimen>
+    <dimen name="mainPadding">5dp</dimen>
+    <dimen name="regularPadding">10dp</dimen>
+
+    <!-- Images -->
+    <dimen name="bannerWidth">100dp</dimen>
+    <dimen name="bannerHeight">70dp</dimen>
+
+    <!-- Text -->
+    <dimen name="bannerText">24sp</dimen>
+</resources>

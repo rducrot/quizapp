@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+
+    <string name="banner">House Stark Quiz</string>
+
+    <string name="question1">Who built Winterfell?</string>
+    <string name="q1_answer1">Bran the Builder</string>
+    <string name="q1_answer2">Jon the Conqueror</string>
+    <string name="q1_answer3">Robb the Bloody</string>
+    <string name="q1_answer4">Tony the Iron Man</string>
+
+    <string name="question2">What is the name of Arya\'s Wolf?</string>
+    <string name="q2_hint">Wolf\'s name</string>
+    <string name="q2_answer">Nymeria</string>
+
+    <string name="question3">Find three of the New Gods</string>
+    <string name="q3_answer1">The Father</string>
+    <string name="q3_answer2">The Wolf</string>
+    <string name="q3_answer3">The Orphan</string>
+    <string name="q3_answer4">The Crone</string>
+    <string name="q3_answer5">The Maiden</string>
+
+
+    <string name="question4">Which House has never been a vassal of the House Stark?</string>
+    <string name="q4_answer1">House Mormont</string>
+    <string name="q4_answer2">House Greyjoy</string>
+    <string name="q4_answer3">House Karstark</string>
+    <string name="q4_answer4">House Bolton</string>
+
+    <string name="question5">What is the name of the Stark\'s ancestral sword?</string>
+    <string name="q5_answer1">Direwolf</string>
+    <string name="q5_answer2">Needle</string>
+    <string name="q5_answer3">Stormbringer</string>
+    <string name="q5_answer4">Ice</string>
+
+    <string name="submit">Submit</string>
+    <string name="reset">Reset</string>
+
+    <string name="perfect">Congratulations!\nYou made a perfect score.\n%1$s points.</string>
+    <string name="notBad">Not bad !\n you made %1$s points.</string>
+    <string name="tryAgain">Sorry, you had no good answer.\n Try again!</string>
+</resources>
