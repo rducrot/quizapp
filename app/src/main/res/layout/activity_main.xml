@@ -152,7 +152,6 @@
                     android:text="@string/q5_answer4"/>
             </RadioGroup>
 
-
             <LinearLayout
                 style="@style/buttonsContainer">
 

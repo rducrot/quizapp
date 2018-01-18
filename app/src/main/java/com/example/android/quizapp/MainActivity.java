@@ -33,6 +33,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     //Saves the score.
     int score;
 
+    //Saves the state of the quiz for the onRestoreInstanceState method.
+    Boolean quizCompleted;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -70,6 +73,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mReset.setOnClickListener(this);
 
         score = 0;
+        quizCompleted = false;
+
+        //Gets the values from saveInstanceState when the view is switched.
+        if(savedInstanceState != null){
+            quizCompleted = savedInstanceState.getBoolean("quizCompleted");
+            if (quizCompleted) {
+                mSubmit.setClickable(false);
+                mReset.setClickable(true);
+            } else {
+                mSubmit.setClickable(true);
+                mReset.setClickable(false);
+            }
+        }
     }
 
     @Override
@@ -84,6 +100,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             }
         }
+    }
+
+    /**
+     * Method to save the values.
+     * @param outState
+     */
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putBoolean("quizCompleted", quizCompleted);
+    }
+
+    /**
+     * Method to restore the values.
+     * @param savedInstanceState
+     */
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        quizCompleted = savedInstanceState.getBoolean("quizCompleted");
     }
 
     /**
@@ -173,6 +209,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         mSubmit.setClickable(false);
         mReset.setClickable(true);
+        quizCompleted = true;
     }
 
     /**
@@ -215,5 +252,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         mSubmit.setClickable(true);
         mReset.setClickable(false);
+        quizCompleted = false;
     }
 }
